@@ -33,7 +33,7 @@ As for displaying to the LED, Adafruit provides an Arduino library that complete
 
 ## Standalone Deployment of the Microcontroller
 
-This project can be implemented with an Arduino. However, I wanted to test out the technique to program a standalone microcontroller chip and by doing that, preserve the "TTL Look and Feel" character of the 8 bit CPU. The procedure to so is described in this [article](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP), which also contains great information on bootloaders and the role they play.
+This project can be implemented with an Arduino. However, I wanted to test out the technique to program a standalone microcontroller chip and by doing that, preserve the "TTL Look and Feel" character of the 8 bit CPU. The procedure to do so is described in this [article](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP), which also contains great information on bootloaders and the role they play.
 
 ## Performance Observations
 
