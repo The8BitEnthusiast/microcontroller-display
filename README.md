@@ -18,7 +18,7 @@ This project made use of the following components:
 This design was aimed at exploring how microcontrollers such as the one used by Arduinos handle interrupts and I2C protocols. My learning goals for this were:
 
 - best practices for interrupt handling on these micro-controllers
-- how a controller ATMEGA328P can be programmed and deployed as a standalone chip
+- how a controller like the ATMEGA328P can be programmed and deployed as a standalone chip
 - how the I2C protocol works and how an LED controller such as the one sold by AdaFruit is internally designed
 
 ## Design
