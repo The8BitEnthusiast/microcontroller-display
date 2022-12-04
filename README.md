@@ -21,6 +21,8 @@ This design was aimed at exploring how microcontrollers such as the one used by 
 - how a controller like the ATMEGA328P can be programmed and deployed as a standalone chip
 - how the I2C protocol works and how an LED controller such as the one sold by AdaFruit is internally designed
 
+As I used an I2C enabled alphanumeric LED display for this, I added a few output modes, like hexadecimal and text.
+
 ## Design
 
 The schematics for the module is shown below. The module is designed to leverage the stock output module's control signals, i.e. CLK, OI, RESET as well as the data bus as input. The CLK and OI lines are ANDed so that a positive pulse is generated when both signals are asserted. This feeds into the microcontroller input pin configured for interrupts. The RESET line is also fed into another interrupt input pin of the microcontroller.
