@@ -31,6 +31,10 @@ From a code perspective, since this is the same microcontroller used on many Ard
 
 As for displaying to the LED, Adafruit provides an Arduino library that completely shields you from the intricacies of i2c and the commands sent to the display. For me this was good and bad. Good in that using the library is simple. Bad in that I was half hoping to actually interact at the protocol level. But that's ok, I'll probably test out the Arduino's native i2c libraries at some point.
 
+## Standalone Deployment of the Microcontroller
+
+This project can be implemented with an Arduino. However, I wanted to test out the technique to program a standalone microcontroller chip and by doing that, preserve the "TTL Look and Feel" character of the 8 bit CPU. The procedure to so is described in this [article](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP), which also contains great information on bootloaders and the role they play.
+
 ## Performance Observations
 
 According to measurements taken on the scope, as shown below, the microcontroller handles the interrupt and starts to transmit to the LED display in about 200 uS. With a transmission rate of 100Khz, the end-to-end sequence fits in a 2 ms timeframe. The controller on the LED display supports transmission rates of up to 400 KHz. It seems that Arduinos can be configured for higher speed on the i2c bus. It would be interesting to test that out.
